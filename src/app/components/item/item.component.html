@@ -1,0 +1,23 @@
+<div>
+    <div id="prueba"class="row" [ngClass] = "{'agregado': item.agregado === false   }"> <!-- agrega o saca el estilo de tachado-->
+    
+    <div class="titulo">
+        <input type="checkbox" [checked]="item.agregado" (change)="onToggle(item)">
+        {{ item.nombre | uppercase }}
+    </div>
+    <div class="precio">
+        {{ item.precio | currency}}
+    </div>
+    <div class="cantidad">
+        {{ item.cantidad }}
+    </div>
+    <div class="total">
+        {{item.precio * item.cantidad | currency}}  <!-- precio final -->
+    </div>
+
+    <div class="actions">
+        <button (click)="onDelete(item)">Eliminar</button>
+    </div>
+
+    </div>
+</div>

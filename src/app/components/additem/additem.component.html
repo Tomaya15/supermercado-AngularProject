@@ -1,0 +1,27 @@
+<div class="container-md">
+<form action="" (ngSubmit)="onSumbit()" >
+    <h2>Registra un nuevo articulo</h2> 
+    <div mb-3>
+        <label for="">ID</label>
+        <input type="number" name="id" id="ingreso" [(ngModel)]="id"> <!-- {{nombre}} -->
+    </div> 
+    <div>
+        <label for="">Nombre del articulo</label>
+        <input type="text" name="title" id="ingreso" [(ngModel)]="nombre"> <!-- {{nombre}} -->
+    </div>
+
+    <div>
+        <label for="">Precio</label>
+        <input type="text" name="price" id="ingreso" [(ngModel)]="precio"> <!-- {{precio}} -->
+    </div>
+
+    <div>
+        <label for="">Cantidad</label>
+        <input type="number" name="price" id="ingreso" [(ngModel)]="cantidad" > <!-- {{cantidad}} -->
+    </div>
+
+    <input id="crear"type="submit" value="Crear" class="btn btn-warning d-grid gap-2 col-6 mx-auto">
+    
+
+</form>
+</div>
